@@ -1,0 +1,8 @@
+h1, html, body, em {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: inherit;
+  text-decoration: none;
+  text-emphasis: none;
+}
