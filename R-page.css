@@ -3,6 +3,11 @@ h1, html, body, em {
   padding: 0;
   border: none;
   font-size: inherit;
-  text-decoration: none;
+  text-decoration: inherit;
   text-emphasis: none;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  background: transparent;
+  text-align: inherit;
 }
