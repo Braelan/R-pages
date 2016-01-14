@@ -15,8 +15,23 @@
       <em>by Braelan</em>
     </header>
 
-  <div class="container">
 
+    <div class="post">
+      <img class="graph" src="img/normalVTumorGenePlotArrow.jpg" alt="" />
+      <section class="caption">
+        Colon adenocarcinoma tissue mean gene expession is on the y axis.
+        Normal tissue mean gene expression is on the x axis.
+        The line of slope 1 represents equal expression in normal and cancer tissue <br><br>
+        Observations:
+        a) At the green arrow, there is a cluster of genes expressing more prevalently in normal tissue.
+          - this is likely smooth muscle tissue that was taken along with normal samples, and not with carcinoma biopsies(1)
+        b) There are several outlier genes to look at. <br><br>
+        The data is from <a href="http://genomics-pubs.princeton.edu/oncology/">http://genomics-pubs.princeton.edu/oncology/</a>
+        <br><br>The R script to generate the plot is my original work, available <a href="https://github.com/Braelan/R-Scripts/blob/master/R-scripts/ggplot/carcinoma.R">here</a>.<br><br>
+        1) <a href="http://www.cs.huji.ac.il/~nirf/Abstracts/BBFNSYFull.html">Tissue Classification with Gene Expression Profiles, A. Ben-Dor et. al.</a>
+
+      </section>
+    </div>
 
 
   <div class="post">
@@ -31,6 +46,23 @@
   </body>
 </html>
 
+<div class="post">
+  <img class="graph" src="img/medterms.png" alt="" />
+  <section class="caption">
+    This is a wordcloud of 500 medical wikipedia articles.  Why you ask?
+    It gives a visual demonstration of a midway step in building a Naive Bayes
+    classifier that predicts if an article is disease related.<br><br>
+    Eventually the classifier was 91% sensitive in predicting article type. <br><br>
+    Observations:
+    a) lots of medical terms (suffer, caus, attack, etc)
+    b) the cleaning algorithm didn't catch and magnify suffixes that are often important
+      (in fact it cut them off) and unexpectedly magnified several terms.
+    The data is from a 20n challenge problem.</a>
+    <br><br>The full naive Bayes classifier R script is available <a href="https://github.com/Braelan/wikipedia-filter">here</a>.<br><br>
+     <a href="https://www3.nd.edu/~steve/computing_with_data/20_text_mining/text_mining_example.html#/3">Text mining walkthrough -Anon</a>
+
+  </section>
+</div>
 
 <div class="post">
   <img class="graph" src="img/medpay.jpg" alt="" />
@@ -44,28 +76,13 @@
   </section>
 </div>
 
-<div class="post">
-  <img class="graph" src="img/normalVTumorGenePlotArrow.jpg" alt="" />
-  <section class="caption">
-    Colon adenocarcinoma tissue mean gene expession is on the y axis.
-    Normal tissue mean gene expression is on the x axis.
-    The line of slope 1 represents equal expression in normal and cancer tissue <br><br>
-    Observations:
-    a) At the green arrow, there is a cluster of genes expressing more prevalently in normal tissue.
-      - this is likely smooth muscle tissue that was taken along with normal samples, and not with carcinoma biopsies(1)
-    b) There are several outlier genes to look at. <br><br>
-    The data is from <a href="http://genomics-pubs.princeton.edu/oncology/">http://genomics-pubs.princeton.edu/oncology/</a>
-    <br><br>The R script to generate the plot is my original work, available <a href="https://github.com/Braelan/R-Scripts/blob/master/R-scripts/ggplot/carcinoma.R">here</a>.<br><br>
-    1) tissue classification with <a href="http://www.cs.huji.ac.il/~nirf/Abstracts/BBFNSYFull.html"></a>Gene Expression Profiles, A. Ben-Dor et. al.
 
-  </section>
-</div>
 
 <div class="post">
   <img class="graph" src="img/titanic.png" alt="" />
   <section class="caption">
   This is a graph of titanic survivors. 0's perished and 1's survived<br><br>
-  Five to ten year olds faired the best, along with 30-35 year olds.  Maybe these were families.  Passengers in their twenties faired poorly.  Were they in a part of the ship that sunk quickly?
+  Newborns to five year olds faired the best, along with 30-35 year olds.  Maybe these were families.  Passengers in their late teens and twenties faired poorly.  Were they in a part of the ship that sunk quickly?
   or just more selfless?   The oldest age group had the worst survival rate.
   This graph was adopted from a tutorial at  <a href="https://www.dataquest.io/course/kaggle-competitions">dataquest</a> with a dataset linked from kaggle.com.
     </section>
